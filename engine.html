@@ -76,7 +76,7 @@
       display: block;
       }
       ul {
-       padding-inline-start: 0px;
+    padding-inline-start: 0px;
      }
      .angks {
        padding-left: 100px;
@@ -96,7 +96,24 @@
        padding: 50px 10px;
        margin: 5px;
        background-color: rgba(255, 255, 255, 0.05);
-       display: inline-block;
+       width: 201px;
+       height: 20px;
+       text-align: center;
+       overflow: hidden;
+     }
+     .MTE {
+       text-align: center;
+       text-shadow: 0px 0px 3px #000;
+     }
+     .MTE img{
+       height: 150px;
+       width: 300px;
+       transform-origin: bottom;
+       position: relative;
+       transform: translate(-20%, -40%);
+     }
+     .tex1 {
+       transform: translate(0%, -750%);
      }
     @media(max-width: 650px) {
       .navibox{
@@ -108,7 +125,7 @@
       .ro_links{
         display: none;
       }
-      a img {
+      a header img {
         content: url('logo.jpg');
       }
       .ham {
@@ -130,17 +147,17 @@
       top: 50%;
       width: 100%;
       transform: translateY(-50%);
-      transition: 0.3s
+      transition: 0.3s;
       }
       .ham span:before {
       top: -10px;
       width: 100%;
-      transition: 0.3s
+      transition: 0.3s;
       }
       .ham span:after {
       bottom: -10px;
       width: 100%;
-      transition: 0.3s
+      transition: 0.3s;
       }
       .ham.active span {
       background-color: transparent;
@@ -192,8 +209,12 @@
        ENGINE
      </h3>
      <ul class="MTE">
-     <li><a href="mini.html">MINI 엔진</a></li>
-     <li>테스트 엔진</li>
+     <li>
+       <a href="mini.html">
+       <img src="minipicture.jpg"><div class="tex1">
+       MINI 엔진</div>
+     </a></li>
+     <li>추후 개발 예정</li>
      </ul>
    </div>
    <footer>
