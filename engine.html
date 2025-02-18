@@ -88,6 +88,8 @@
        padding-top: 40px;
        text-align: center;
        font-size: 40px;
+       border-bottom: 2px solid white;
+       padding-bottom: 20px;
      }
      .MTE li{
        list-style: none;
@@ -113,11 +115,13 @@
        transform: translate(-20%, -40%);
      }
      .tex1 {
-       transform: translate(0%, -750%);
+       position: absolute;
+       transform: translate(90%, -750%);
      }
     @media(max-width: 650px) {
       .navibox{
         display: none;
+        z-index: 5;
       }
       .combutton{
         display: none;
