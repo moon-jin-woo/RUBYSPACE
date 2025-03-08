@@ -76,13 +76,12 @@
       display: block;
       }
       ul {
-    padding-inline-start: 0px;
+      padding-inline-start: 0px;
      }
      .angks {
        padding-left: 100px;
        padding-right: 100px;
        padding-bottom: 70px;
-       text-align: center;
      }
      .tit {
        color: #00E6FF;
@@ -92,23 +91,16 @@
        border-bottom: 2px solid white;
        padding-bottom: 20px;
      }
-     .subtit {
-       color: #FEB98E;
-       font-size: 20px;
-       margin-bottom: 10px;
-       padding-top: 5px;
-       padding-bottom: 8px;
-       border-bottom: 1px solid;
-       border-color: #D8D7D7;
-       font-weight: bold;
-       background-color: rgba(255, 136,0, 0.1)
-     }
-     .box1 li {
+     .formbox {
        list-style: none;
-       border: 2px solid;
-       padding-bottom: 10px;
-       margin-bottom: 13px;
+       border: 2px solid #FF6600;
+       padding: 40px;
+       text-align: center;
        border-radius: 15px;
+     }
+     .formtit {
+       margin-bottom: 10px;
+       font-size: 25px;
      }
     @media(max-width: 650px) {
       .navibox{
@@ -166,10 +158,10 @@
       transform: rotate(-45deg);
       }
       .angks {
-        padding-top: 20px;
-        padding-bottom: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
       }
     }
     </style>
@@ -201,24 +193,18 @@
    </header>
    <div class="angks">
      <h3 class="tit">
-       ROCKET
+       BOOK
      </h3>
-     <div class="list">
-       <ul class="box1">
-       <li>
-         <div class="subtit">
-           사운딩 로켓 <br>
-         </div>
-           <a href="rbsra.html">RUBYSR-a</a><br>
-       </li>
-       <li>
-         <div class="subtit">
-           로켓 <br>
-         </div>
-           <a href="rbiv.html">RB-IV</a>
-       </li>
-     </div>
-    </div>
+      <form>
+        <ul class="formbox">
+          <li>
+            <div class="formtit">
+              발사체 선정
+            </div>
+          </li>
+        </ul>
+      </form>
+   </div>
    <footer>
      <div class="foot">
        <a href="index.html"><img src="logo.jpg" alt="루비스페이스" width="100"></a>
