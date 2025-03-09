@@ -93,7 +93,7 @@
      }
      .formbox {
        list-style: none;
-       border: 2px solid #FF6600;
+       border: 2px solid #00E6FF;
        padding: 40px;
        text-align: center;
        border-radius: 15px;
@@ -101,6 +101,27 @@
      .formtit {
        margin-bottom: 10px;
        font-size: 25px;
+       padding-bottom: 10PX;
+       border-bottom: 1px solid #00E6FF;
+     }
+     .sodyd {
+       color: #00E6FF;
+       font-size: 25px;
+     }
+     form {
+       position: relative;
+     }
+     input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #00E6FF;
+      border-radius: 50%;
+      position: relative;
+      margin: none;
+      padding: none;
      }
     @media(max-width: 650px) {
       .navibox{
@@ -200,6 +221,12 @@
           <li>
             <div class="formtit">
               발사체 선정
+            </div>
+            <div class="sodyd">
+              <label style="display: inline-block;">
+                <input type="radio" name="roch" value="rbsra">
+                <span>RUBYSR-a</span>
+              </label>
             </div>
           </li>
         </ul>
