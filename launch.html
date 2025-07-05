@@ -9,7 +9,8 @@
     a {
       color: white;
       text-decoration: none;
-      padding-left, right: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     header {
       display: flex;
@@ -36,7 +37,7 @@
       padding: 0px 20px;
     }
     .ro_links li a{
-      transition: all 0.3s ease 0s:
+      transition: all 0.3s ease 0s;
     }
     .ro_links li a:hover {
       color: #00E6FF
@@ -47,7 +48,7 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      transition: all 0.3s ease 0s:
+      transition: all 0.3s ease 0s;
     }
     button:hover {
       background-color: rgba(255, 119, 0, 0.8);
@@ -76,13 +77,12 @@
       display: block;
       }
       ul {
-    padding-inline-start: 0px;
+      padding-inline-start: 0px;
      }
      .angks {
        padding-left: 100px;
        padding-right: 100px;
        padding-bottom: 70px;
-       text-align: center;
      }
      .tit {
        color: #00E6FF;
@@ -92,27 +92,34 @@
        border-bottom: 2px solid white;
        padding-bottom: 20px;
      }
-     .subtit {
-       color: #FEB98E;
-       font-size: 20px;
-       margin-bottom: 10px;
-       padding-top: 5px;
-       padding-bottom: 8px;
-       border-bottom: 1px solid;
-       border-color: #D8D7D7;
-       font-weight: bold;
-       background-color: rgba(255, 136,0, 0.1)
-     }
-     .box1 li {
+     .MTE li{
        list-style: none;
        border: 2px solid;
-       padding-bottom: 10px;
-       margin-bottom: 13px;
+       display: inline-block;
+       padding: 50px 10px;
+       margin: 5px;
+       background-color: rgba(255, 255, 255, 0.05);
+       width: 201px;
+       height: 20px;
+       text-align: center;
+       overflow: hidden;
        border-radius: 15px;
+     }
+     .MTE {
+       text-align: center;
+       text-shadow: 0px 0px 3px #000;
+     }
+     .li1 {
+       background-image: url(rbsra.jpeg);
+       background-size: 250px 125px;
+       background-position: -20px 2px;
+       padding-left: 10px;
+       padding-right: 10px;
      }
     @media(max-width: 650px) {
       .navibox{
         display: none;
+        z-index: 5;
       }
       .combutton{
         display: none;
@@ -120,7 +127,7 @@
       .ro_links{
         display: none;
       }
-      a img {
+      a header img {
         content: url('logo.jpg');
       }
       .ham {
@@ -142,17 +149,17 @@
       top: 50%;
       width: 100%;
       transform: translateY(-50%);
-      transition: 0.3s
+      transition: 0.3s;
       }
       .ham span:before {
       top: -10px;
       width: 100%;
-      transition: 0.3s
+      transition: 0.3s;
       }
       .ham span:after {
       bottom: -10px;
       width: 100%;
-      transition: 0.3s
+      transition: 0.3s;
       }
       .ham.active span {
       background-color: transparent;
@@ -203,22 +210,13 @@
      <h3 class="tit">
        ROCKET
      </h3>
-     <div class="list">
-       <ul class="box1">
-       <li>
-         <div class="subtit">
-           사운딩 로켓 <br>
-         </div>
-           <a href="rbsra.html">RUBYSR-a</a><br>
-       </li>
-       <li>
-         <div class="subtit">
-           로켓 <br>
-         </div>
-           <a href="rbiv.html">RB-IV</a>
-       </li>
-     </div>
-    </div>
+     <ul class="MTE">
+     <li class="li1">
+       <a href="rbsra.html">
+         RUBYSR-a</a></li>
+     <li>RB-IV</li>
+     </ul>
+   </div>
    <footer>
      <div class="foot">
        <a href="index.html"><img src="logo.jpg" alt="루비스페이스" width="100"></a>

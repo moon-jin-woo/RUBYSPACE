@@ -9,7 +9,8 @@
     a {
       color: white;
       text-decoration: none;
-      padding-left, right: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     header {
       display: flex;
@@ -36,7 +37,7 @@
       padding: 0px 20px;
     }
     .ro_links li a{
-      transition: all 0.3s ease 0s:
+      transition: all 0.3s ease 0s;
     }
     .ro_links li a:hover {
       color: #00E6FF
@@ -47,7 +48,7 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      transition: all 0.3s ease 0s:
+      transition: all 0.3s ease 0s;
     }
     button:hover {
       background-color: rgba(255, 119, 0, 0.8);
@@ -82,6 +83,7 @@
        padding-left: 100px;
        padding-right: 100px;
        padding-bottom: 70px;
+       text-align: center;
      }
      .tit {
        color: #00E6FF;
@@ -91,6 +93,32 @@
        border-bottom: 2px solid white;
        padding-bottom: 20px;
      }
+     .qhsans {
+       align-items: center;
+       display: flex;
+       justify-content: space-between;
+     }
+     .dps {
+       border-bottom: 1px solid white;
+     }
+     .tab {
+       text-align: left;
+       margin-left: 20px;
+     }
+    @media(max-width: 870px) {
+      .qhsans {
+        display: flex;
+        flex-direction: column;
+      }
+      .tab {
+        text-align: left;
+        margin-top: 60px;
+        margin-left: 0px;
+     }
+      .dps {
+        text-align: center;
+      }
+    }
     @media(max-width: 650px) {
       .navibox{
         display: none;
@@ -152,6 +180,18 @@
         padding-left: 30px;
         padding-right: 30px;
       }
+      .qhsans {
+        display: flex;
+        flex-direction: column;
+      }
+      .tab {
+        text-align: left;
+        margin-top: 60px;
+        margin-left: 0px;
+     }
+      .dps {
+        text-align: center;
+      }
     }
     </style>
   </head>
@@ -184,14 +224,26 @@
      <h3 class="tit">
         RUBYSR-a
      </h3>
-     역시나 추가예정
-   </div>
+     <div class="qhsans">
+     <div class="vid">
+      <iframe height="180" width="320" src="https://www.youtube.com/embed/rp1FxcCycmE?si=LAwNklVbBCBnwZat" title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+      &lt;RUBYSR-a의 발사 영상&gt;
+     </div>
+     <div class="tab">
+       RUBYSR-a는 RBSPACE가 개발한 첫 사운딩 로켓입니다.
+       이 로켓은 MINI엔진 하나를 사용합니다.
+       RUBYSR-a의 첫 발사에서 20.2km에 도달하였으며 임무를 완수하였습니다.<p>
+       <div class="dps">도달 : 20km</div><br>
+       <div class="dps">엔진 : MINI엔진 (1개)</div><br>
+      </div>
+      </div>
+    </div>
    <footer>
      <div class="foot">
        <a href="index.html"><img src="logo.jpg" alt="루비스페이스" width="100"></a>
      </div>
    </footer>
- </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
      </script>
       <script>
