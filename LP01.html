@@ -65,6 +65,7 @@
       padding-left: none;
       background-color: rgba(20, 20, 20, 1);
       overflow: hidden;
+      border-radius: 10px;
     }
     .navibox li {
       list-style: none;
@@ -83,6 +84,7 @@
        padding-left: 100px;
        padding-right: 100px;
        padding-bottom: 70px;
+       text-align: center;
      }
      .tit {
        color: #00E6FF;
@@ -92,6 +94,32 @@
        border-bottom: 2px solid white;
        padding-bottom: 20px;
      }
+     .qhsans {
+       align-items: center;
+       display: flex;
+       justify-content: space-between;
+     }
+     .dps {
+       border-bottom: 1px solid white;
+     }
+     .tab {
+       text-align: left;
+       margin-left: 20px;
+     }
+    @media(max-width: 870px) {
+      .qhsans {
+        display: flex;
+        flex-direction: column;
+      }
+      .tab {
+        text-align: left;
+        margin-top: 60px;
+        margin-left: 0px;
+     }
+      .dps {
+        text-align: center;
+      }
+    }
     @media(max-width: 650px) {
       .navibox{
         display: none;
@@ -153,6 +181,18 @@
         padding-left: 30px;
         padding-right: 30px;
       }
+      .qhsans {
+        display: flex;
+        flex-direction: column;
+      }
+      .tab {
+        text-align: left;
+        margin-top: 60px;
+        margin-left: 0px;
+     }
+      .dps {
+        text-align: center;
+      }
     }
     </style>
   </head>
@@ -185,14 +225,25 @@
      <h3 class="tit">
         RUBYLP-0.1
      </h3>
-     역시나 추가예정
-   </div>
+     <div class="qhsans">
+     <div class="vid">
+      <img src="lp01.jpeg" width="320"><br>
+      &lt;RUBYLP-a의 사진&gt;
+     </div>
+     <div class="tab">
+       RUBYLP-0.1는 RBSPACE에서 개발한 첫 발사대입니다. 높이는 약 8m입니다.
+       소형 액체연료 발사체에 연료를 공급할 수 있습니다.
+       2025년 2월 13일 오후 3시에 본 발사대를 이용한 첫 발사를 성공적으로 진행하였습니다.<p>
+       <div class="dps">높이 :약 8m</div><br>
+       <div class="dps">용도 : 높이 7m, 직경 0.7m 이하의 1단 액체연료 발사체</div><br>
+     </div>
+     </div>
+    </div>
    <footer>
      <div class="foot">
        <a href="index.html"><img src="logo.jpg" alt="루비스페이스" width="100"></a>
      </div>
    </footer>
- </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js">
      </script>
       <script>
